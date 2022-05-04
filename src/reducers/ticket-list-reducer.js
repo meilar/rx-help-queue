@@ -1,6 +1,6 @@
 import * as c from './../actions/ActionTypes';
 
-export default (state = {}, action) => {
+const ticketListReucer = (state = {}, action) => {
   const { id, formattedWaitTime } = action;
   switch (action.type) {
   case c.DELETE_TICKET:
@@ -17,3 +17,5 @@ export default (state = {}, action) => {
     return state;
   }
 };
+
+export default ticketListReucer;
